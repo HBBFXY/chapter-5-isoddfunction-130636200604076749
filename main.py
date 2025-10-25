@@ -1,13 +1,8 @@
-# 在此文件中实现 isOdd 函数
-
-def isOdd(value):
-    """
-    判断输入是否为奇整数    
-    参数:
-    value - 任意类型的输入值    
-    返回:
-    bool - 如果是整数且为奇数返回 True，否则返回 False
-    """
-    # 学生实现代码区域
-    # 提示：首先检查类型是否为整数，然后检查奇偶性
-    
+def isOdd(param):
+    # 首先判断参数是否为整数类型
+    if isinstance(param, int):
+        # 如果是整数，判断是否为奇数（奇数是不能被 2 整除的整数）
+        return param % 2 != 0
+    # 如果参数不是整数，直接返回 False
+    else:
+        return False
